@@ -1,0 +1,14 @@
+﻿<Window x:Class="WpfApplication1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="489" Width="936" Closing="Window_Closing" Loaded="Window_Loaded" xmlns:my="clr-namespace:Microsoft.Samples.Kinect.WpfViewers;assembly=Microsoft.Samples.Kinect.WpfViewers">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="29*" />
+            <RowDefinition Height="421*" />
+        </Grid.RowDefinitions>
+        <Image Grid.Row="1" Height="323" HorizontalAlignment="Left" Margin="26,22,0,0" Name="image1" Stretch="Fill" VerticalAlignment="Top" Width="403" />
+        <Image Grid.Row="1" Height="324" HorizontalAlignment="Left" Margin="452,22,0,0" Name="image2" Stretch="Fill" VerticalAlignment="Top" Width="428" />
+        <Label Content="Label" Grid.Row="1" Height="324" HorizontalAlignment="Left" Margin="26,22,0,0" Name="label1" VerticalAlignment="Top" Width="403" DataContext="{Binding ElementName=testLabel}" FontSize="30" Foreground="White" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" />
+    </Grid>
+</Window>
